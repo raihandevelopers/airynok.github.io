@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- site metas -->
+    <title>AIrynok | Find similar product offers when shopping online anywhere</title>
+    <meta name="keywords" content="help tool search find similar product offers shopping online marketplace web">
+    <meta name="description" content="AI-enabled helping tool to search for similar product offers over the web when shopping online on any marketplace.">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]
+    -->
+</head>
+
+<body class="main-layout">
+    <!-- loader -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="loading" /></div>
+    </div>
+    <!-- end loader -->
+
+    <!-- header -->
+    <header>
+        <section class="slider_section">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid padding_dd">
+                            <div class="carousel-caption">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="text-bg">
+                                            <span>Intelligent Similar Products Search</span>
+                                            <h1>AIrynok</h1>
+                                            <p>It is an AI-enabled helping tool for online shopping that uses natural language processing by parsing the product page on almost any marketplace and building a search query of the most relevant keywords to find
+                                                similar offers over the web</p>
+                                            <div class="Vegetable">
+                                                <input class="Vegetable_fom" value="xiaomi mi 6 smart band" type="text" id="search_text" placeholder="Search...">
+                                                <button class="Search_btn" onclick="searchOffers();">Search</button>
+                                            </div>
+                                            <label style="color: #020500;">Add a new bookmark with the URL of code below
+                                                and click it during online shopping when you are on the product page and
+                                                want to see related offers by other stores and marketplaces</label>
+                                            <pre><code>javascript:(()=>{var e="http://localhost:3000/index.html?q="+((e,o)=>{var t=["i","me","my","myself","we","our","ours","ourselves","you","your","yours","yourself","yourselves","he","him","his","himself","she","her","hers","herself","it","its","itself","they","them","their","theirs","themselves","what","which","who","whom","this","that","these","those","am","is","are","was","were","be","been","being","have","has","had","having","do","does","did","doing","a","an","the","and","but","if","or","because","as","until","while","of","at","by","for","with","about","against","between","into","through","during","before","after","above","below","to","from","up","down","in","out","on","off","over","under","again","further","then","once","here","there","when","where","why","how","all","any","both","each","few","more","most","other","some","such","no","nor","not","only","own","same","so","than","too","very","s","t","can","will","just","don","should","now"],h=e.split(" "),r=[];h.forEach(e=>{e=e.toLowerCase(),/^[a-z0-9]+$/i.test(e)&&!t.includes(e)&&r.push(e)});var n={};r.forEach(e=>{void 0===n[e]?n[e]=1:n[e]++});var s=[];for(var a in n)n[a]*Math.log(o/n[a])<=0&&s.push(a);return s})(document.title+" "+document.querySelector('meta[name="description"]').content,2).join("+");window.open(encodeURI(e),"_blank")})();</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="images_box">
+                                            <figure><img src="images/img2.png"></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- end header -->
+
+    <!-- usage -->
+    <div id="vegetable" class="vegetable">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>How to <strong class="llow">use when online shopping</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
+                    <div class="vegetable_shop">
+                        <h3>AIrynok 101</h3>
+                        <p>After you have created the bookmark, you can start online shopping at any moment. When you have found a product that you like you only need to click the bookmark after which the AIrynok will be loaded and ready for search. Click
+                            on the search button at AIrynok and discover suggested similar product offers from multiple marketplaces and online shops.</p>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 ">
+                    <div class="vegetable_img">
+                        <figure><img src="images/v1.png" alt="#" /></figure>
+                        <span>Step 1</span>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 ">
+                    <div class="vegetable_img margin_top">
+                        <figure><img src="images/v2.png" alt="#" /></figure>
+                        <span>Step 2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end usage -->
+
+    <!-- footer -->
+    <footr>
+        <div class="footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <h3>Address </h3>
+                                    <ul class="loca">
+                                        <li>
+                                            Internet, Worldwide
+                                        </li>
+                                        <li>
+                                            <a href="mailto:7960954@gmail.com">7960954@gmail.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> AIrynok</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footr>
+    <!-- end footer -->
+
+    <!-- Javascript files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        function searchOffers() {
+            var searchQuery = $('#search_text').val();
+
+            var googleShoppingString = 'https://www.google.com/search?tbm=shop&q=' +
+                searchQuery;
+
+            window.open(encodeURI(googleShoppingString), '_blank');
+        }
+
+        $(document).ready(function() {
+            var searchQuery = new URL(window.location.href).searchParams.get('q');
+
+            $('#search_text').val(searchQuery);
+        });
+    </script>
+</body>
+
+</html>
