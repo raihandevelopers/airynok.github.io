@@ -96,7 +96,7 @@
                                             <label style="color: #020500;">Add a new bookmark with the URL of code below
                                                 and click it during online shopping when you are on the product page and
                                                 want to see related offers by other stores and marketplaces</label>
-                                            <pre><code>javascript:(()=>{var e="https://airynok.github.io/?q="+((e,o)=>{var t=["i","me","my","myself","we","our","ours","ourselves","you","your","yours","yourself","yourselves","he","him","his","himself","she","her","hers","herself","it","its","itself","they","them","their","theirs","themselves","what","which","who","whom","this","that","these","those","am","is","are","was","were","be","been","being","have","has","had","having","do","does","did","doing","a","an","the","and","but","if","or","because","as","until","while","of","at","by","for","with","about","against","between","into","through","during","before","after","above","below","to","from","up","down","in","out","on","off","over","under","again","further","then","once","here","there","when","where","why","how","all","any","both","each","few","more","most","other","some","such","no","nor","not","only","own","same","so","than","too","very","s","t","can","will","just","don","should","now"],h=e.split(" "),r=[];h.forEach(e=>{e=e.toLowerCase(),/^[a-z0-9]+$/i.test(e)&&!t.includes(e)&&r.push(e)});var n={};r.forEach(e=>{void 0===n[e]?n[e]=1:n[e]++});var s=[];for(var a in n)n[a]*Math.log(o/n[a])<=0&&s.push(a);return s})(document.title+" "+document.querySelector('meta[name="description"]').content,2).join("+");window.open(encodeURI(e),"_blank")})();</code></pre>
+                                            <pre><code id="airynok-code"></code></pre>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -209,6 +209,10 @@
             var searchQuery = new URL(window.location.href).searchParams.get('q');
 
             $('#search_text').val(searchQuery);
+
+            $.get('https://raw.githubusercontent.com/AIrynok/airynok-core/main/airynok.min.js', function(data) {
+                $('#airynok-code').text(data);
+            });
         });
     </script>
 </body>
