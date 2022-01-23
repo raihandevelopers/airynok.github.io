@@ -200,16 +200,14 @@
 
     <script>
         function searchOffers() {
-            var searchQuery = $('#search_text').val();
-
-            var googleShoppingString = 'https://www.google.com/search?tbm=shop&q=' +
-                searchQuery;
+            const searchQuery = $('#search_text').val();
+            const googleShoppingString = 'https://www.google.com/search?tbm=shop&q=' + searchQuery;
 
             window.open(encodeURI(googleShoppingString), '_blank');
         }
 
         $(document).ready(function() {
-            var searchQuery = new URL(window.location.href).searchParams.get('q');
+            const searchQuery = new URL(window.location.href).searchParams.get('q');
 
             $('#search_text').val(searchQuery);
 
