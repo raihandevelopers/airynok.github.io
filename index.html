@@ -2,33 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJNBXVD970"></script>
-    <script src="https://cloudfreebpmnquality.herokuapp.com/efforts/efforts.lib.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-RJNBXVD970');
-
-        gtag('event', 'purchase', {
-            "transaction_id": EffortsLib.getID(),
-            "affiliation": 'AIrynok',
-            "value": EffortsLib.getValue(window.location.href),
-            "currency": 'USD',
-            "tax": 0,
-            "shipping": 0,
-            "items": [{
-                "id": 'AIrynok',
-                "name": 'AIrynok'
-            }]
-        })
-    </script>
-
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
