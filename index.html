@@ -19,47 +19,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- site metas -->
-    <title>AIrynok — AI-driven Dropshipping Purchasing with SCOR and BPMN</title>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "AIrynok — AI-driven Dropshipping Purchasing with SCOR and BPMN",
-            "operatingSystem": "Any",
-            "applicationCategory": "BusinessApplication",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "ratingCount": "1"
-            },
-            "offers": {
-                "@type": "Offer",
-                "price": "0.00",
-                "priceCurrency": "USD"
-            }
-        }
-    </script>
-
     <!-- Primary Meta Tags -->
-    <meta name="title" content="AIrynok — AI-driven Dropshipping Purchasing with SCOR and BPMN">
-    <meta name="description" content="AI-powered search for similar product offers, dropshipping calculator, integrated supply chain SCOR and business process BPMN models of source and deliver.">
+    <title>AIrynok BPMN reference model and SCOR supply chain SCM helper</title>
+    <meta name="title" content="AIrynok BPMN reference model and SCOR supply chain SCM helper">
+    <meta name="description" content="AI-powered purchasing helper and dropshipping calculator based on supply chain management SCM SCOR and reference BPMN business process model">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://airynok.github.io/">
-    <meta property="og:title" content="AIrynok — AI-driven Dropshipping Purchasing with SCOR and BPMN">
-    <meta property="og:description" content="AI-powered search for similar product offers, dropshipping calculator, integrated supply chain SCOR and business process BPMN models of source and deliver.">
+    <meta property="og:title" content="AIrynok BPMN reference model and SCOR supply chain SCM helper">
+    <meta property="og:description" content="AI-powered purchasing helper and dropshipping calculator based on supply chain management SCM SCOR and reference BPMN business process model">
     <meta property="og:image" content="https://airynok.github.io/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://airynok.github.io/">
-    <meta property="twitter:title" content="AIrynok — AI-driven Dropshipping Purchasing with SCOR and BPMN">
-    <meta property="twitter:description" content="AI-powered search for similar product offers, dropshipping calculator, integrated supply chain SCOR and business process BPMN models of source and deliver.">
+    <meta property="twitter:title" content="AIrynok BPMN reference model and SCOR supply chain SCM helper">
+    <meta property="twitter:description" content="AI-powered purchasing helper and dropshipping calculator based on supply chain management SCM SCOR and reference BPMN business process model">
     <meta property="twitter:image" content="https://airynok.github.io/images/logo.png">
 
-    <meta name="keywords" content="ai dropshipping purchasing SCOR BPMN similar product calculator supply chain business process models source deliver">
+    <meta name="keywords" content="bpmn, reference, scor, scm, supply chain, process model, dropshipping calculator, similar product, search">
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
@@ -118,12 +97,17 @@
                     <div class="carousel-item active">
                         <div class="container-fluid padding_dd">
                             <div class="carousel-caption">
-                                <div class="row">
+                                <!-- start product -->
+                                <div class="row" itemtype="https://schema.org/Product" itemscope>
+                                    <meta itemprop="mpn" content="ANG" />
+                                    <meta itemprop="name" content="AIrynok BPMN reference model and SCOR supply chain SCM helper" />
+                                    <meta itemprop="description" content="AI-powered purchasing helper and dropshipping calculator based on supply chain management SCM SCOR and reference BPMN business process model" />
+
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                         <div class="text-bg">
-                                            <h1>AIrynok</h1>
-                                            <h2>AI-driven Dropshipping Purchasing with SCOR and BPMN</h2>
-                                            <p style="padding-bottom: 10px;">It is an AI-enabled helping tool for purchasing that uses a product page by a wholesaler to query similar offers by the local merchants</p>
+                                            <h1 style="font-size: 48px; line-height: normal; padding-bottom: 10px;">AIrynok BPMN reference model and SCOR supply chain SCM helper</h1>
+                                            <h2>AI-powered purchasing helper and dropshipping calculator based on supply chain management SCM SCOR and reference BPMN business process model</h2>
+                                            <p style="padding-bottom: 10px;">It is an AI-enabled helping tool for purchasing that uses a product page of a wholesaler to query similar offers by the local merchants</p>
 
                                             <div class="Vegetable" style="padding-bottom: 10px;">
                                                 <input class="Vegetable_fom" value="xiaomi mi 6 smart band" type="text" id="search_text" placeholder="Search...">
@@ -134,21 +118,53 @@
                                             <br>
                                             <label style="color: #020500;">Add a new bookmark with the URL given below and click on it during purchasing from a wholesaler when you are on the product page and want to see related offers by the local online marketplaces and internet shops 👇</label>
                                             <pre><code id="airynok-code"></code></pre>
+
+                                            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <meta itemprop="url" content="https://airynok.github.io/" />
+                                                <link itemprop="availability" href="http://schema.org/InStock" />
+                                                <meta itemprop="priceCurrency" content="USD" />
+                                                <meta itemprop="itemCondition" content="https://schema.org/NewCondition" />
+                                                <meta itemprop="price" content="0.0" />
+                                                <meta itemprop="priceValidUntil" content="2099-12-31" />
+                                            </span>
+
                                             <a href="https://github.com/AIrynok/airynok-chrome/archive/refs/heads/main.zip" target="_blank" style="min-width: 100%;">Download Chrome Extension (beta)</a>
                                             <br>
 
                                             <label style="color: #020500; padding-top: 10px;">Unzip the extension, go to Chrome Settings and select Extensions, enable developer mode, click on "Load unpacked" and select the unzipped folder in which the "manifest.json" file exists</label>
                                             <br>
-                                            <a href="#usage">Usage</a>
-                                            <a href="#solutions">Solutions</a>
+                                            <a href="#usage">About</a>
+                                            <a href="#solutions">Models</a>
+
+                                            <div itemprop="aggregateRating" itemtype="https://schema.org/AggregateRating" itemscope>
+                                                <meta itemprop="bestRating" content="5" />
+                                                <meta itemprop="worstRating" content="1" />
+                                                <meta itemprop="ratingValue" content="5" />
+                                                <meta itemprop="ratingCount" content="1" />
+                                            </div>
+                                            <div itemprop="review" itemtype="https://schema.org/Review" itemscope>
+                                                <div itemprop="author" itemtype="https://schema.org/Person" itemscope>
+                                                    <meta itemprop="name" content="AIrynok" />
+                                                </div>
+                                                <div itemprop="reviewRating" itemtype="https://schema.org/Rating" itemscope>
+                                                    <meta itemprop="worstRating" content="1">
+                                                    <meta itemprop="bestRating" content="5">
+                                                    <meta itemprop="ratingValue" content="5">
+                                                </div>
+                                            </div>
+                                            <meta itemprop="sku" content="AIRYNOK" />
+                                            <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
+                                                <meta itemprop="name" content="AIRYNOK" />
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                         <div class="images_box">
-                                            <figure><img src="images/img2.png" alt="logo"></figure>
+                                            <figure><img itemprop="image" src="images/img2.png" alt="logo"></figure>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- end product -->
                             </div>
                         </div>
                     </div>
@@ -167,15 +183,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>How to <strong class="llow">use for purchasing</strong></h2>
-                        <a href="#home" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">Home</a> | <a href="#solutions" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">Solutions</a>
+                        <h2 style="color: #ff7e1d;">About SCOR supply chain SCM helper</h2>
+                        <a href="#home" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">Home</a> | <a href="#solutions" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">Models</a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="vegetable_shop">
-                        <h3><strong class="llow">AIrynok</strong> 101</h3>
+                        <h3>Supply chain SCM reference process based on SCOR and BPMN</h3>
                         <p>After you have created the bookmark, you can start online shopping at any moment.</p>
                         <br>
 
@@ -218,7 +234,8 @@
                         <p>Estimate the possible benefit of purchasing this product from a wholesaler using this simple dropshipping calculator:</p>
 
                         <!-- start calculator -->
-                        <form class="mt-4 mb-4" id="dropshipping-form">
+                        <h2 class="mt-4">Supply chain SCM dropshipping calculator</h2>
+                        <form class="mt-0 mb-4" id="dropshipping-form">
                             <div class="form-row">
                                 <div class="col">
                                     <div class="form-group">
@@ -294,15 +311,15 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>Industry <strong class="llow">solutions</strong></h2>
-                        <a href="#home" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">Home</a> | <a href="#usage" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">Usage</a>
+                        <h2 style="color: #ff7e1d;">BPMN reference SCM supply chain SCOR models</h2>
+                        <a href="#home" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">Home</a> | <a href="#usage" style="color: #ff7e1d; font-size: 20px; font-weight: 500;">About</a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="vegetable_shop">
-                        <h3>Integration of <strong class="llow">BPMN</strong> Business Process and <strong class="llow">SCOR&reg;</strong> Supply Chain Models</h3>
+                        <h3>Integrated SCOR supply chain reference BPMN process model</h3>
                         <p>We propose an approach to the integration of the Business Process Model and Notation (BPMN) and Supply-Chain Operations Reference (SCOR) models for supply chain business process simulation.</p>
                         <p>This approach considers the synergy of Business Process Management (BPM) and Supply Chain Management (SCM) concepts both strive to reduce costs and satisfy customers.</p>
                         <p>Therefore, we consider the extension of BPMN-based models with SCM-driven parameters to simulate supply chain business processes and support decision-making in the context of supply chain management.</p>
@@ -332,7 +349,7 @@
             <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="vegetable_shop">
-                        <h3>Evaluation of <strong class="llow">SCOR&reg;</strong> Supply Chain <strong class="llow">BPMN</strong> Business Process Models</h3>
+                        <h3>Reference SCOR supply chain SCM BPMN process model</h3>
                         <p>We consider the supply chain management and its most remarkable business process reference model Supply-Chain Operations Reference (SCOR).</p>
                         <p>The SCOR model is considered as a hierarchical system of business process definitions amended with respective indicators and practices.</p>
                         <p>Supply chains tend to be described using business process modeling notations such as Business Process Model and Notation (BPMN), while design flaws could cause supply chain defects and, hence, monetary losses and time delays.</p>
